@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  max-height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+header .title {
+  text-align: center;
+}
+
+main div {
+  border-style: unset;
+  margin: 1rem;
+  background-color: plum;
+  border-radius: 8px;
+}
+
+main div fieldset {
+  border-radius: 8px;
+}
+
+main div h3 {
+  margin: 1rem;
+}
+
+main div form textarea {
+  resize: none;
+}
+/*# sourceMappingURL=styles.css.map */

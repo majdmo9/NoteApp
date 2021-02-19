@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Note App</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 class="title">Note App</h1>
+        </header>
+        <div class="post-note-div">
+            <form action="#" class="post-form">
+                <fieldset>
+                    <h3>ADD NOTE</h3>
+                    <label>Note Title:</label>
+                    <input type="text" name="titleInput" id="noteTitle" placeholder="title">
+                    <label>Note Content:</label>
+                    <textarea name="contentInput" id="noteContent" cols="30" rows="10" placeholder="content"></textarea>
+                    <input type="submit" name="postBtn" value="submit">
+                    <div id="note-added"></div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="delete-note-div">
+            <form action="#" class="delete-form">
+                <fieldset>
+                    <h3>DELETE NOTE BY ID</h3>
+                    <label>Note Id:</label>
+                    <input type="text" id="noteId" name="idInput" placeholder="id">
+                    <input type="submit" name="deleteBtn" value="delete">
+                    <div id="note-deleted"></div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="update-note-div">
+            <form action="#" class="update-form">
+                <fieldset>
+                    <h3> UPDATE NOTE BY ID</h3>
+                    <label>Note Title: </label>
+                    <input type="text" name="titleInput" id="noteTitle" placeholder="title">
+                    <label>Note Content: </label>
+                    <textarea name="contentInput" id="noteContent" cols="30" rows="10" placeholder="content"></textarea>
+                    <label>Note ID: </label>
+                    <input type="text" name='idInput' id="noteId" placeholder="id">
+                    <input type="submit" name="updateBtn" value="update">
+                    <div id="note-updated"></div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="get-note-div">
+            <form action="#" class="get-form">
+                <fieldset>
+                    <h3>GET NOTE</h3>
+                    <input type="text" name="idInput" id="noteId" placeholder="id">
+                    <input type="submit" name="getBtn" value="Get">
+                </fieldset>
+            </form>
+        </div>
+        <div class="database-div">
+            <h2>Data Base</h2>
+            <div class="database"></div>
+        </div>
+    </main>
+    <script src="./api.js"></script>
+</body>
+
+</html>

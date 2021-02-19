@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family:sans-serif;
+    max-height: 100vh;
+}
+header{
+    width: 100%;
+    .title{
+        text-align: center;
+    }
+}
+main{
+    div{
+        border-style:unset;
+        margin: 1rem;
+        background-color: plum;
+        border-radius: 8px;
+        fieldset{
+            border-radius: 8px;
+        }
+        h3{
+            margin: 1rem;
+        }
+        form{
+            textarea{
+                resize: none;
+            }
+        }
+    }
+}
